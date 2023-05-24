@@ -10,4 +10,4 @@ camera-ready version
 
 corrected version
 
-![corrected version](./figure/corrected version.png)
+![corrected version](https://github.com/Sunny276/Multi-Level-ILT/blob/main/figure/corrected%20version.png)
