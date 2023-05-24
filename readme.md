@@ -6,7 +6,7 @@ Today, I find some shapes are out of the bounding box for the center_test, here 
 
 camera-ready version
 
-![camera-ready version](./figure/camera-ready version.png)
+![camera-ready version](https://github.com/Sunny276/Multi-Level-ILT/blob/main/figure/camera-ready%20version.png)
 
 corrected version
 
