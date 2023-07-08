@@ -1,0 +1,10 @@
+mask_1 304
+mask_2 185
+mask_3 304
+mask_4 233
+mask_5 364
+mask_6 352
+mask_7 286
+mask_8 239
+mask_9 418
+mask_10 114

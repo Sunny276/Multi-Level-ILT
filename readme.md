@@ -1,8 +1,7 @@
-img/center_test is following the setting of ''Neural-ILT''
 
-Thanks a lot for neural-ilt's author ^_^
 
-Today, I find some shapes are out of the bounding box for the center_test, here is a corrected result. We will put the corrected result on arxiv and release code later.
+We have discovered that certain shapes extend beyond their respective bounding boxes. 
+After making the necessary corrections, we have obtained an updated and corrected result. We intend to publish this revised version on arXiv.
 
 camera-ready version
 
