@@ -74,7 +74,9 @@ def low_resolution_ilt(target_img, mask_img, restrict_map, s, n, lr=1):
     for i in range(1, n+1):
         mask_img = torch.clamp(mask_img, -2, 2)
         mask_img = F.avg_pool2d(mask_img.unsqueeze(0).unsqueeze(0), 3, stride=1, padding=1).squeeze(0).squeeze(0)
+        mask_img = mask_img * restrict_map
         bmask = torch.sigmoid(beta * (mask_img - mthr)) 
+        bmask = bmask * restrict_map 
         r_out = lithosimer.litho_show(bmask, dose=max_dose, flag_defocus=False)
         r_in = lithosimer.litho_show(bmask, dose=min_dose, flag_defocus=True)
         err = l2_loss_torch(r_in, r_out) + l2_loss_torch(r_out, target_img)
