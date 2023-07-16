@@ -1,12 +1,26 @@
+# Multi-level ILT
 
+## Overview
 
-We have discovered that certain shapes extend beyond their respective bounding boxes. 
-After making the necessary corrections, we have obtained an updated and corrected result. We intend to publish this revised version on arXiv.
+This repository is the official implementation for the paper: 
 
-camera-ready version
+## (Update 2023.07.16) Rectified results and source released
 
-![camera-ready version](https://github.com/Sunny276/Multi-Level-ILT/blob/main/figure/camera-ready%20version.png)
+We found that certain shapes in the final mask solution exceeded the designated optimization area by a small margin. To address this issue, we 
+made necessary adjustments and have now provideed the updated results below.
 
-corrected version
+<img src='figure/rectified_results.png' width='800'>
 
-![corrected version](https://github.com/Sunny276/Multi-Level-ILT/blob/main/figure/corrected%20version.png)
+## Quick start
+
+Multiple ILT methods have been subjected to testing and verification using the [ICCAD 2013 mask optimization contest benchmarks](https://ieeexplore.ieee.org/document/6691131). However, it is worth noting that discrepancies exist among the datasets employed in these evaluations. To ensure a comprehensive and equitable comparison with these methods, we present two distinct versions of the dataset. The first version (./dataset/neural_test) corresponds to the dataset utilized by Neural-ILT[https://ieeexplore.ieee.org/document/9256592] and A2-ILT[https://dl.acm.org/doi/abs/10.1145/3489517.3530579], while the second version (./dataset/develset_test) aligns with the dataset employed by DevelSet[https://ieeexplore.ieee.org/document/9643464] and GLS-ILT[https://ieeexplore.ieee.org/document/9474212].
+
+The test scripts are saved in ./scripts.
+~~~bash
+$ source scripts/neural_fast_test.sh
+~~~
+
+## Acknowledgement
+Thanks to everyone who makes their code or data available:
+
+- [Neural-ILT](https://github.com/cuhk-eda/neural-ilt)
